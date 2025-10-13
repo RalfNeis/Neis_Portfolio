@@ -24,7 +24,7 @@ My goal is to become a **game developer** capable of building engaging experienc
 ## 🧠 Skills
 
 **Languages:**  
-`C` • `Java` • `Python` • `JavaScript` • `HTML` • `CSS`
+`C` • `C++` • `Java` • `Python` • `JavaScript` • `HTML` • `CSS`
 
 **Tools & Frameworks:**  
 `Git` • `VS Code` • `Figma` • `Canva` • `Unity`  
