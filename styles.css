@@ -517,7 +517,8 @@ section {
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 1rem;
   margin-top: 3rem;
   width: 90%;
 }
@@ -529,9 +530,10 @@ section {
   padding: 1.5rem;
   border-radius: 16px;
   max-width: 350px;
-  flex: 1 1 300px;
+  flex: 1 1 250px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .project-card:hover {
