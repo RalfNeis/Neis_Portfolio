@@ -117,43 +117,142 @@
 
 <section id="projects">
   <h1 class="title">Quest Log</h1>
+  <p style="text-align:center; color:#b7a7ff; margin-bottom:1rem;">(Click on a card to view details)</p>
 
   <div class="projects-container">
-    <div class="project-card">
+    <div class="project-card" onclick="openProjectModal(this)">
       <h3>🎮 ALAMAT NI NEO</h3>
       <p>A 2D mini adventure game.</p>
       <span class="tech">Java</span>
+      <!-- Hidden Content for Modal -->
+      <div class="project-details-content" style="display: none;">
+        <!-- INSERT IMAGE HERE: Replace src with your actual image path -->
+        <img src="https://placehold.co/600x300/222/7d5fff?text=Alamat+Gameplay" alt="Alamat Screenshot" class="modal-image">
+        
+        <h4>About the Game</h4>
+        <p>This is a 2D adventure game built using Java. It features custom sprite animations, level design, and interactive NPCs.</p>
+        <br>
+        <h4>Key Features</h4>
+        <ul style="padding-left: 20px;">
+          <li>Interactive Storyline</li>
+          <li>Turn-based combat system</li>
+          <li>Custom pixel art assets</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card" onclick="openProjectModal(this)">
       <h3>🏧 ATM NG MGA POGI</h3>
       <p>An ATM machine simulation that demonstrates basic banking operations and file handling in C++.</p>
       <span class="tech">C++</span>
+      <!-- Hidden Content for Modal -->
+      <div class="project-details-content" style="display: none;">
+        <!-- INSERT IMAGE HERE -->
+        <img src="https://placehold.co/600x300/222/7d5fff?text=ATM+Console+UI" alt="ATM Screenshot" class="modal-image">
+
+        <h4>System Overview</h4>
+        <p>A robust console-based application simulating real-world ATM functionalities including deposits, withdrawals, and balance inquiries.</p>
+        <br>
+        <h4>Technical Highlights</h4>
+        <ul style="padding-left: 20px;">
+          <li>Secure PIN authentication</li>
+          <li>File handling for persistent user data</li>
+          <li>Transaction history logging</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card" onclick="openProjectModal(this)">
       <h3>🍳 KusinaSeekr</h3>
       <p>A web platform for discovering and sharing local Filipino recipes.</p>
       <span class="tech">Web Design / Front-End Development</span>
+      <!-- Hidden Content for Modal -->
+      <div class="project-details-content" style="display: none;">
+        <!-- INSERT IMAGE HERE -->
+        <img src="https://placehold.co/600x300/222/7d5fff?text=KusinaSeekr+Home" alt="KusinaSeekr Screenshot" class="modal-image">
+
+        <h4>Project Description</h4>
+        <p>KusinaSeekr connects food lovers with authentic Filipino recipes submitted by the community.</p>
+        <br>
+        <h4>My Contribution</h4>
+        <p>Designed the user interface using Figma and implemented the responsive front-end layouts.</p>
+      </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card" onclick="openProjectModal(this)">
       <h3>📱 Buddy-JTR</h3>
       <p>A budgeting Mobile Application for College students.</p>
       <span class="tech">Kotlin / Jetpack Compose</span>
+      <!-- Hidden Content for Modal -->
+      <div class="project-details-content" style="display: none;">
+        <!-- INSERT IMAGE HERE -->
+        <img src="https://placehold.co/600x300/222/7d5fff?text=Buddy-JTR+App" alt="Buddy JTR Screenshot" class="modal-image">
+
+        <h4>App Concept</h4>
+        <p>Designed to help college students manage their daily expenses and allowances effectively.</p>
+        <br>
+        <h4>Tech Stack</h4>
+        <p>Built with Kotlin and Jetpack Compose for a modern, native Android experience.</p>
+      </div>
+    </div>
+
+    <div class="project-card" onclick="openProjectModal(this)">
+      <h3>🚗 Vehicle Counter AI</h3>
+      <p>Developing an AI system that automates vehicle counting and categorization through live camera feeds.</p>
+      <span class="tech">Artificial Intelligence / Data Analytics</span>
+      <!-- Hidden Content for Modal -->
+      <div class="project-details-content" style="display: none;">
+        <!-- INSERT IMAGE HERE -->
+        <img src="https://placehold.co/600x300/222/7d5fff?text=AI+Detection" alt="Vehicle Counter Screenshot" class="modal-image">
+
+        <h4>AI Implementation</h4>
+        <p>Uses computer vision algorithms to detect and classify vehicles in real-time traffic footage.</p>
+        <br>
+        <h4>Tools Used</h4>
+        <p>Python, OpenCV, and YOLO (You Only Look Once) architecture.</p>
+      </div>
     </div>
   </div>
 
   <h2 class="subtitle">Currently Working On</h2>
 
   <div class="projects-container">
-    <div class="project-card">
-      <h3>🚗 Vehicle Counter AI</h3>
-      <p>Developing an AI system that automates vehicle counting and categorization through live camera feeds.</p>
-      <span class="tech">Artificial Intelligence / Data Analytics</span>
+    <div class="project-card" onclick="openProjectModal(this)">
+      <h3>📱 Kalookonek</h3>
+      <p>A web platform connecting Caloocan residents with local services, news, and community updates.</p>
+      <span class="tech">UI/UX Design / Front-End Development</span>
+      <!-- Hidden Content for Modal -->
+      <div class="project-details-content" style="display: none;">
+        <!-- INSERT IMAGE HERE -->
+        <img src="https://placehold.co/600x300/222/7d5fff?text=Kalookonek+UI" alt="Kalookonek Screenshot" class="modal-image">
+
+        <h4>Project Vision</h4>
+        <p>Kalookonek aims to bridge the gap between the local government and the citizens of Caloocan by providing a centralized hub for information.</p>
+        <br>
+        <h4>My Role</h4>
+        <p>I am leading the <b>UI/UX Design</b> and <b>Front-End Development</b>.</p>
+        <br>
+        <h4>Current Progress</h4>
+        <ul style="padding-left: 20px;">
+          <li>Wireframing and Prototyping complete</li>
+          <li>Building responsive layouts for the news feed</li>
+          <li>Integrating community service directory</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- THE MODAL (Hidden by default) -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeProjectModal()">&times;</span>
+    <h2 id="modalTitle" class="modal-title">Project Title</h2>
+    <div id="modalBody" class="modal-body">
+      <!-- Content will be injected here via JavaScript -->
+    </div>
+  </div>
+</div>
 
     <script src="script.js"></script>
     

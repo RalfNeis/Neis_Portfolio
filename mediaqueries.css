@@ -30,6 +30,37 @@
   .section__text__p2 {
     font-size: 1.9rem;
   }
+  
+  /* Update project card sizing for tablets/smaller desktops */
+  .projects-container {
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+     /* Allow cards to be smaller but fill available space */
+    flex: 1 1 45%; 
+    max-width: 48%; /* Ensure 2 cards per row with some gap */
+  }
+
+  /* --- MODAL RESPONSIVENESS (TABLET) --- */
+  .modal-content {
+    width: 85%; /* Slightly wider on tablets */
+    margin: 10% auto;
+    padding: 2rem;
+  }
+  
+  .modal-title {
+    font-size: 1.8rem;
+  }
+
+  /* Target specific class AND generic images inside modal */
+  .modal-image,
+  .modal-body img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 480px) {
@@ -45,6 +76,46 @@
   .section__text__p1,
   .section__text__p2 {
     font-size: 1.5rem;
+  }
+  
+  /* Update project card sizing for mobile */
+  .projects-container {
+     flex-direction: column; /* Stack cards vertically */
+     align-items: center; /* Center items */
+  }
+
+  .project-card {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Remove desktop max-width constraints */
+    flex: 1 1 auto; /* Allow flexible height */
+  }
+
+  /* --- MODAL RESPONSIVENESS (MOBILE) --- */
+  .modal-content {
+    width: 90%; /* Reduced slightly to prevent edge touching */
+    margin: 15% auto; 
+    padding: 1rem; /* Less padding to give more room for content */
+  }
+
+  .modal-title {
+    font-size: 1.4rem;
+  }
+
+  /* Target specific class AND generic images inside modal */
+  .modal-image,
+  .modal-body img {
+    /* Force image to fit container width using !important */
+    width: 100% !important; 
+    max-width: 100% !important;
+    height: auto !important; 
+    object-fit: contain; 
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  
+  .modal-body {
+    font-size: 0.9rem; 
   }
 }
 
