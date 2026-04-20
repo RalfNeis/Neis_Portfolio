@@ -6,12 +6,11 @@
     <title>Neis Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-   
 </head>
 <body>
     <nav id="desktop-nav">
         <div class="logo">RALF-NEIS</div>
-        <div></div>
+        <div>
             <ul class="nav-links">
             <li><a href="#profile">Profile</a></li>
             <li><a href="#about">About</a></li>
@@ -30,30 +29,26 @@
                 <span></span>
             </div>
             <div class="menu-links">
-            <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             </div>
         </div>
     </nav>
    
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/prof_pic_new.jpg" alt="Neis Profile Pic">
+            <img src="./assets/prof_pic_new.jpg" alt="Neis Profile Pic" onerror="this.src='https://placehold.co/450x450/222/7d5fff?text=Ralf+Neis'">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">
-                Hello, I am
-            </p>
-            <h1 class="title">
-                RALF NEIS
-            </h1>
-            <p class="section__text__p2">
-                Computer Science Student 
-            </p>
+            <p class="section__text__p1">Hello, I am</p>
+            <h1 class="title">RALF NEIS</h1>
+            <p class="section__text__p2">Computer Science Student</p>
             <div id="github-container">
-                <img src="assets/github.png" alt="GitHub Logo" class="icon" onclick="location.href='https://github.com/RalfNeis'">
+                <svg viewBox="0 0 24 24" class="icon" onclick="window.open('https://github.com/RalfNeis', '_blank')" style="fill: #7d5fff; width: 45px; height: 45px; cursor: pointer;">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
                 <p class="icon-label"> <-- My GitHub</p>
             </div>
         </div>
@@ -63,204 +58,278 @@
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container-2">
-             <div class="about-details-container">
-      <div class="details-container">
-        <h2 class="about-heading">🚀 About Me</h2>
-        <p class="about-intro">
-          Hi there! 👋  
-          I’m a <b>Computer Science student</b> who enjoys bringing ideas to life through 
-          <b>code</b> and <b>design</b>. Whether it’s building games or crafting 
-          user-friendly web interfaces, I’m always exploring new ways to merge creativity 
-          and functionality.
-        </p>
-        <div class="about-focus">
-          <p>Currently, I’m focused on:</p>
-          <ul>
-            <li>🎮 Game Development and Design</li>
-            <li>💡 Front-End Web Development</li>
-            <li>🧠 Exploring AI Projects</li>
-            <li>🎨 User Interface & Experience Design</li>
-          </ul>
+            <div class="about-details-container">
+                <div class="details-container">
+                    <h2 class="about-heading">🚀 About Me</h2>
+                    <p class="about-intro">
+                        Hi there! 👋  
+                        I’m a <b>Computer Science student</b> who enjoys bringing ideas to life through 
+                        <b>code</b> and <b>design</b>. Whether it’s building games or crafting 
+                        user-friendly web interfaces, I’m always exploring new ways to merge creativity 
+                        and functionality.
+                    </p>
+                    <div class="about-focus">
+                        <p>Currently, I’m focused on:</p>
+                        <ul>
+                            <li>🎮 Game Development and Design</li>
+                            <li>💡 Front-End Web Development</li>
+                            <li>🧠 Exploring AI Projects</li>
+                            <li>🎨 User Interface & Experience Design</li>
+                        </ul>
+                    </div>
+                    <p class="about-goal">
+                        My goal is to become a <b>game developer</b> capable of building engaging 
+                        experiences that people enjoy playing.
+                    </p>
+                </div>
+            </div>
+            <div class="section__pic-container-2">
+                <img src="./assets/about_pic_new.jpg" alt="Neis About Pic" class="about-pic" onerror="this.src='https://placehold.co/420x420/222/7d5fff?text=About+Me'"/>
+            </div>
         </div>
-        <p class="about-goal">
-          My goal is to become a <b>game developer</b> capable of building engaging 
-          experiences that people enjoy playing.
-        </p>
-      </div>
-    </div>
-    <div class="section__pic-container-2">
-      <img src="./assets/about_pic_new.jpg" alt="Neis About Pic" class="about-pic"/>
-    </div>
-    </div>
     </section>
 
-<section id="skills">
-  <h1 class="title">Skill Tree</h1>
+    <section id="skills">
+        <h1 class="title">Skill Tree</h1>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h2>Languages</h2>
+                <p>C • C++ • Java • Python • JavaScript • HTML • CSS</p>
+            </div>
+            <div class="skill-category">
+                <h2>Tools & Frameworks</h2>
+                <p>Git • VS Code • Figma • Canva • Unity</p>
+            </div>
+            <div class="skill-category">
+                <h2>Areas of Interest</h2>
+                <p>🎮 Game Development • 🌐 Web Design • 🎨 UI Design • 🤖 Artificial Intelligence</p>
+            </div>
+        </div>
+    </section>
 
-  <div class="skills-container">
-    <div class="skill-category">
-      <h2>Languages</h2>
-      <p>C • C++ • Java • Python • JavaScript • HTML • CSS</p>
+    <section id="projects">
+        <h1 class="title">Quest Log</h1>
+        <p style="text-align:center; color:#b7a7ff; margin-bottom:1rem;">(Click on a card to view details)</p>
+
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card" onclick="openProjectModal(this)">
+                <h3>🎮 ALAMAT NI NEO</h3>
+                <p>A 2D mini adventure game.</p>
+                <span class="tech">Java</span>
+                
+                <div class="project-details-content" style="display: none;">
+                    <img src="https://placehold.co/800x450/222/7d5fff?text=Alamat+Gameplay" alt="Alamat Screenshot" class="modal-image">
+                    <h4>About the Game</h4>
+                    <p>This is a 2D adventure game built using Java. It features custom sprite animations.</p>
+                    
+                    <!-- NEW MODAL BUTTONS -->
+                    <div class="modal-actions">
+                        <a href="https://github.com/RalfNeis" target="_blank" class="modal-btn">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" onclick="openProjectModal(this)">
+                <h3>🏧 ATM NG MGA POGI</h3>
+                <p>An ATM machine simulation.</p>
+                <span class="tech">C++</span>
+                
+                <div class="project-details-content" style="display: none;">
+                    <img src="https://placehold.co/800x450/222/7d5fff?text=ATM+Console+UI" alt="ATM Screenshot" class="modal-image">
+                    <h4>System Overview</h4>
+                    <p>A robust console-based application simulating real-world ATM functionalities including deposits, withdrawals, and balance inquiries. Built entirely in C++ with focus on data persistency.</p>
+                    <h4>Technical Highlights</h4>
+                    <ul>
+                        <li>Secure PIN authentication</li>
+                        <li>File handling for persistent user data</li>
+                        <li>Transaction history logging</li>
+                    </ul>
+                    
+                    <div class="modal-actions">
+                        <a href="https://github.com/RalfNeis" target="_blank" class="modal-btn">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" onclick="openProjectModal(this)">
+                <h3>🍳 KusinaSeekr</h3>
+                <p>Platform for local Filipino recipes.</p>
+                <span class="tech">Front-End</span>
+                
+                <div class="project-details-content" style="display: none;">
+                    <img src="https://placehold.co/800x450/222/7d5fff?text=KusinaSeekr+Home" alt="KusinaSeekr Screenshot" class="modal-image">
+                    <h4>Project Description</h4>
+                    <p>KusinaSeekr connects food lovers with authentic Filipino recipes submitted by the community, allowing users to discover and share their favorite dishes.</p>
+                    <h4>My Contribution</h4>
+                    <p>Designed the user interface using Figma and implemented the responsive front-end layouts ensuring mobile accessibility and user-friendly navigation.</p>
+                    
+                    <div class="modal-actions">
+                        <a href="https://github.com/RalfNeis" target="_blank" class="modal-btn">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                        <a href="#" class="modal-btn modal-btn-outline">
+                            <!-- External Link Icon -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" onclick="openProjectModal(this)">
+                <h3>📱 Buddy-JTR</h3>
+                <p>Budgeting App for College students.</p>
+                <span class="tech">Kotlin</span>
+                
+                <div class="project-details-content" style="display: none;">
+                    <img src="https://placehold.co/800x450/222/7d5fff?text=Buddy-JTR+App" alt="Buddy JTR Screenshot" class="modal-image">
+                    <h4>App Concept</h4>
+                    <p>Designed to help college students manage their daily expenses and allowances effectively. It breaks down budgeting into simple, visual categories.</p>
+                    <h4>Tech Stack</h4>
+                    <p>Built natively for Android utilizing <b>Kotlin</b> and <b>Jetpack Compose</b> for a seamless, modern material-design interface.</p>
+                    
+                    <div class="modal-actions">
+                        <a href="https://github.com/RalfNeis" target="_blank" class="modal-btn">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" onclick="openProjectModal(this)">
+                <h3>🚗 Vehicle Counter AI</h3>
+                <p>Automated counting via live feeds.</p>
+                <span class="tech">AI / Python</span>
+                
+                <div class="project-details-content" style="display: none;">
+                    <img src="https://placehold.co/800x450/222/7d5fff?text=AI+Detection" alt="Vehicle Counter Screenshot" class="modal-image">
+                    <h4>AI Implementation</h4>
+                    <p>Uses computer vision algorithms to detect and classify vehicles in real-time traffic footage, providing valuable data for traffic analytics.</p>
+                    <h4>Tools Used</h4>
+                    <p>Developed utilizing <b>Python</b>, <b>OpenCV</b>, and the highly efficient <b>YOLO</b> (You Only Look Once) neural network architecture.</p>
+                    
+                    <div class="modal-actions">
+                        <a href="https://github.com/RalfNeis" target="_blank" class="modal-btn">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="subtitle">Currently Working On</h2>
+
+        <div class="projects-container">
+            <div class="project-card" onclick="openProjectModal(this)">
+                <h3>📱 Kalookonek</h3>
+                <p>Platform for local services & news.</p>
+                <span class="tech">UI/UX / Front-End</span>
+                
+                <div class="project-details-content" style="display: none;">
+                    <img src="https://placehold.co/800x450/222/7d5fff?text=Kalookonek+UI" alt="Kalookonek Screenshot" class="modal-image">
+                    <h4>Project Vision</h4>
+                    <p>Kalookonek aims to bridge the gap between the local government and the citizens of Caloocan by providing a centralized hub for information, announcements, and municipal services.</p>
+                    <h4>My Role</h4>
+                    <p>I am leading the <b>UI/UX Design</b> and <b>Front-End Development</b>.</p>
+                    <h4>Current Progress</h4>
+                    <ul>
+                        <li>Wireframing and Prototyping complete</li>
+                        <li>Building responsive layouts for the news feed</li>
+                        <li>Integrating community service directory</li>
+                    </ul>
+                    
+                    <div class="modal-actions">
+                        <a href="https://github.com/RalfNeis" target="_blank" class="modal-btn">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectModal(this)">
+                <h3>🚦 Traffic Optimization</h3>
+                <p>Simulation-based assessment at Imus City.</p>
+                <span class="tech">Simulation / Research</span>
+                
+                <div class="project-details-content" style="display: none;">
+                    <img src="https://placehold.co/800x450/222/7d5fff?text=Traffic+Simulation" alt="Traffic Optimization Screenshot" class="modal-image">
+                    <h4>Project Overview</h4>
+                    <p>Traffic Optimization at Carsadang Bago 2, Imus City: A Simulation-Based Assessment of Structural and Regulatory Interventions.</p>
+                    <h4>Key Focus Areas</h4>
+                    <ul>
+                        <li>Traffic flow modeling and analysis</li>
+                        <li>Evaluating potential structural changes</li>
+                        <li>Assessing the impact of regulatory interventions</li>
+                    </ul>
+                    
+                    <div class="modal-actions">
+                        <a href="https://github.com/RalfNeis" target="_blank" class="modal-btn">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectModal(this)">
+                <h3>🫁 RespiScan</h3>
+                <p>CNN-Based AI Models for Chest X-rays.</p>
+                <span class="tech">AI / Machine Learning</span>
+                
+                <div class="project-details-content" style="display: none;">
+                    <img src="https://placehold.co/800x450/222/7d5fff?text=RespiScan+AI" alt="RespiScan Screenshot" class="modal-image">
+                    <h4>Project Overview</h4>
+                    <p>RespiScan: An AI-Powered Software using CNN-Based AI Models to detect Bacterial Pneumonia in Chest X-rays.</p>
+                    <h4>Key Focus Areas</h4>
+                    <ul>
+                        <li>Developing Convolutional Neural Networks (CNN)</li>
+                        <li>Processing and analyzing medical imaging data</li>
+                        <li>Building a diagnostic software interface</li>
+                    </ul>
+                    
+                    <div class="modal-actions">
+                        <a href="https://github.com/RalfNeis" target="_blank" class="modal-btn">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE MODAL (Hidden by default) -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeProjectModal()">&times;</span>
+            <h2 id="modalTitle" class="modal-title">Project Title</h2>
+            <div id="modalBody" class="modal-body">
+                <!-- Content will be injected here via JavaScript -->
+            </div>
+        </div>
     </div>
 
-    <div class="skill-category">
-      <h2>Tools & Frameworks</h2>
-      <p>Git • VS Code • Figma • Canva • Unity</p>
-    </div>
-
-    <div class="skill-category">
-      <h2>Areas of Interest</h2>
-      <p>🎮 Game Development • 🌐 Web Design • 🎨 UI Design • 🤖 Artificial Intelligence</p>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <h1 class="title">Quest Log</h1>
-  <p style="text-align:center; color:#b7a7ff; margin-bottom:1rem;">(Click on a card to view details)</p>
-
-  <div class="projects-container">
-    <div class="project-card" onclick="openProjectModal(this)">
-      <h3>🎮 ALAMAT NI NEO</h3>
-      <p>A 2D mini adventure game.</p>
-      <span class="tech">Java</span>
-      <!-- Hidden Content for Modal -->
-      <div class="project-details-content" style="display: none;">
-        <!-- INSERT IMAGE HERE: Replace src with your actual image path -->
-        <img src="https://placehold.co/600x300/222/7d5fff?text=Alamat+Gameplay" alt="Alamat Screenshot" class="modal-image">
-        
-        <h4>About the Game</h4>
-        <p>This is a 2D adventure game built using Java. It features custom sprite animations, level design, and interactive NPCs.</p>
-        <br>
-        <h4>Key Features</h4>
-        <ul style="padding-left: 20px;">
-          <li>Interactive Storyline</li>
-          <li>Turn-based combat system</li>
-          <li>Custom pixel art assets</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="project-card" onclick="openProjectModal(this)">
-      <h3>🏧 ATM NG MGA POGI</h3>
-      <p>An ATM machine simulation that demonstrates basic banking operations and file handling in C++.</p>
-      <span class="tech">C++</span>
-      <!-- Hidden Content for Modal -->
-      <div class="project-details-content" style="display: none;">
-        <!-- INSERT IMAGE HERE -->
-        <img src="https://placehold.co/600x300/222/7d5fff?text=ATM+Console+UI" alt="ATM Screenshot" class="modal-image">
-
-        <h4>System Overview</h4>
-        <p>A robust console-based application simulating real-world ATM functionalities including deposits, withdrawals, and balance inquiries.</p>
-        <br>
-        <h4>Technical Highlights</h4>
-        <ul style="padding-left: 20px;">
-          <li>Secure PIN authentication</li>
-          <li>File handling for persistent user data</li>
-          <li>Transaction history logging</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="project-card" onclick="openProjectModal(this)">
-      <h3>🍳 KusinaSeekr</h3>
-      <p>A web platform for discovering and sharing local Filipino recipes.</p>
-      <span class="tech">Web Design / Front-End Development</span>
-      <!-- Hidden Content for Modal -->
-      <div class="project-details-content" style="display: none;">
-        <!-- INSERT IMAGE HERE -->
-        <img src="https://placehold.co/600x300/222/7d5fff?text=KusinaSeekr+Home" alt="KusinaSeekr Screenshot" class="modal-image">
-
-        <h4>Project Description</h4>
-        <p>KusinaSeekr connects food lovers with authentic Filipino recipes submitted by the community.</p>
-        <br>
-        <h4>My Contribution</h4>
-        <p>Designed the user interface using Figma and implemented the responsive front-end layouts.</p>
-      </div>
-    </div>
-
-    <div class="project-card" onclick="openProjectModal(this)">
-      <h3>📱 Buddy-JTR</h3>
-      <p>A budgeting Mobile Application for College students.</p>
-      <span class="tech">Kotlin / Jetpack Compose</span>
-      <!-- Hidden Content for Modal -->
-      <div class="project-details-content" style="display: none;">
-        <!-- INSERT IMAGE HERE -->
-        <img src="https://placehold.co/600x300/222/7d5fff?text=Buddy-JTR+App" alt="Buddy JTR Screenshot" class="modal-image">
-
-        <h4>App Concept</h4>
-        <p>Designed to help college students manage their daily expenses and allowances effectively.</p>
-        <br>
-        <h4>Tech Stack</h4>
-        <p>Built with Kotlin and Jetpack Compose for a modern, native Android experience.</p>
-      </div>
-    </div>
-
-    <div class="project-card" onclick="openProjectModal(this)">
-      <h3>🚗 Vehicle Counter AI</h3>
-      <p>Developing an AI system that automates vehicle counting and categorization through live camera feeds.</p>
-      <span class="tech">Artificial Intelligence / Data Analytics</span>
-      <!-- Hidden Content for Modal -->
-      <div class="project-details-content" style="display: none;">
-        <!-- INSERT IMAGE HERE -->
-        <img src="https://placehold.co/600x300/222/7d5fff?text=AI+Detection" alt="Vehicle Counter Screenshot" class="modal-image">
-
-        <h4>AI Implementation</h4>
-        <p>Uses computer vision algorithms to detect and classify vehicles in real-time traffic footage.</p>
-        <br>
-        <h4>Tools Used</h4>
-        <p>Python, OpenCV, and YOLO (You Only Look Once) architecture.</p>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="subtitle">Currently Working On</h2>
-
-  <div class="projects-container">
-    <div class="project-card" onclick="openProjectModal(this)">
-      <h3>📱 Kalookonek</h3>
-      <p>A web platform connecting Caloocan residents with local services, news, and community updates.</p>
-      <span class="tech">UI/UX Design / Front-End Development</span>
-      <!-- Hidden Content for Modal -->
-      <div class="project-details-content" style="display: none;">
-        <!-- INSERT IMAGE HERE -->
-        <img src="https://placehold.co/600x300/222/7d5fff?text=Kalookonek+UI" alt="Kalookonek Screenshot" class="modal-image">
-
-        <h4>Project Vision</h4>
-        <p>Kalookonek aims to bridge the gap between the local government and the citizens of Caloocan by providing a centralized hub for information.</p>
-        <br>
-        <h4>My Role</h4>
-        <p>I am leading the <b>UI/UX Design</b> and <b>Front-End Development</b>.</p>
-        <br>
-        <h4>Current Progress</h4>
-        <ul style="padding-left: 20px;">
-          <li>Wireframing and Prototyping complete</li>
-          <li>Building responsive layouts for the news feed</li>
-          <li>Integrating community service directory</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- THE MODAL (Hidden by default) -->
-<div id="projectModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn" onclick="closeProjectModal()">&times;</span>
-    <h2 id="modalTitle" class="modal-title">Project Title</h2>
-    <div id="modalBody" class="modal-body">
-      <!-- Content will be injected here via JavaScript -->
-    </div>
-  </div>
-</div>
+    <footer id="footer">
+        <div class="footer-container">
+            <p class="footer-text">© 2025 RalfNeis | All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-    
-<footer id="footer">
-  <div class="footer-container">
-    <p class="footer-text">© 2025 RalfNeis | All rights reserved.</p>
-  </div>
-</footer>
-
 </body>
 </html>

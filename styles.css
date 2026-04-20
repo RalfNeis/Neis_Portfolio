@@ -686,3 +686,44 @@ section {
     background: #7d5fff; 
     border-radius: 4px;
 }
+
+/* --- MODAL BUTTON STYLES --- */
+.modal-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(125, 95, 255, 0.2);
+}
+
+.modal-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: #7d5fff;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* This is the part that shrinks the giant SVG! */
+.modal-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.modal-btn:hover {
+    background-color: #b7a7ff;
+    color: #0a0a0a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(125, 95, 255, 0.5);
+    text-decoration: none;
+}
